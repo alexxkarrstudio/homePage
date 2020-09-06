@@ -1,0 +1,305 @@
+@media (max-width: 1200px) {
+     .blog__text {
+        padding: 0 53px 0 0;
+     }
+      .footer {
+        background-position: left -200px bottom -80px,right -200px bottom -80px!important;
+     }
+     .feed {
+        &_map {
+            background: url(../../img/feed__map.svg) left -80px top 150px no-repeat!important;
+         }
+     }
+     .content {
+        .content__text {
+            max-width: 600px;
+        }
+        .content__wrapper {
+            flex-direction: column;
+        }
+       
+     }
+     .portfolio {
+         a {
+             max-width: 320px;
+         }
+         .portfolio__unit {
+             max-width: 320px;
+         }
+     }
+     .intro__title {
+         font-size: 3.2rem;
+     }
+     .intro__title span {
+         font-size: 1.6rem;
+     }
+     .intro__unit--title {
+         font-size: 1.6rem;
+     }
+     .intro__unit--icon {
+         width: 80px;
+         height: 80px;
+     }
+     .portfolio  {
+        .unit__footer {
+            padding: 4rem 1rem!important;
+        }
+     }
+       
+}
+@media (max-width: 1024px) {
+
+} 
+@media (max-width: 991px) {
+    .promo__name {
+        font-size: 45px;
+    }
+    .promo__descr {
+        font-size: 19px;
+    }
+    .intro__wrapper {
+        flex-wrap: wrap;
+    }
+    .intro__unit--big {
+        width: 60%;
+    }
+    .intro__unit--green {
+        width: 40%;
+    }
+    .intro__unit--blue {
+        width: 40%;
+    }
+    .intro__unit--orange {
+        width: 60%;
+    }
+    .portfolio a {
+        max-width: 369px;
+    }
+    .portfolio__unit {
+        max-width: 369px!important;
+    }
+
+     
+         
+
+@media (max-width: 767px)  {
+    .header {
+        height: 50px;
+        background-color: rgba(0, 0, 0, 0.9);
+        &__dark {
+        background-color: rgba(0, 0, 0, 0.9);
+
+        }
+        &__inner {
+            height: 50px;
+        }
+        .nav {
+            display: none;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.85);
+            width: 100%;
+            top: 100%;
+            left: 0;
+            right: 0;
+            z-index: 1;
+            flex-direction: column;
+            height: auto; 
+            min-height: calc(100vh - 50px);/* otnimaem 50--eto vysota .header */
+            text-align: right;
+            padding-top: 10px;
+            transform: translateX(100%);
+            transition: transform .2s ease-out!important;
+
+            &__link {
+                display: block;
+                padding: 10px 20px;
+                font-size: 22px;
+               
+            }
+        }
+        .show {
+            display: flex;
+            transform: translateX(0);
+
+        }
+        .burger {
+            display: block;
+            padding: 0;
+            border: none;
+            background: none;
+        }
+        
+    }
+    .promo {
+        &__inner {
+            height: auto;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 70px 0 20px 0;
+            .button {
+                width: 100%;
+            }
+            .intro__slider_arrows {
+                display: none;
+            } 
+        }
+        &__text {
+            order: 1;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+       
+        &__title_amp {
+            right: auto;
+            left: 50%;
+            transform: translate3d(-50%, -50%, 0)!important;
+        }
+        .request__form_translate {
+            transform: translateY(0);
+        }
+        .request__form {
+            order: 2;
+        }
+    }
+    .services {
+       &__inner {
+        .services__item {
+            width: 50%;
+       }
+       }
+    } 
+  
+    .advantages {
+        &__list {
+            padding-left: 41px;
+            padding-right: 13px;
+            &:after {
+                bottom: 4px;
+            }
+        }
+    }
+    .team__inner {
+        // padding: 0 10px;
+        flex-direction: column;
+        align-items: center;
+        .team__col {
+            max-width: 370px;
+            width: 100%;
+        }
+    }
+    .advantages {
+        &__inner {
+            flex-wrap: wrap;
+        }
+        .advantages__col {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+    .blog {
+        &__inner {
+            flex-direction: column;
+        }
+        .blog__unit {
+            width: 100%;
+        }
+    }
+    .content {
+        .content__wrapper {
+            align-items: center;
+        }
+        a {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+    
+ 
+    
+@media (max-width: 575px)  {
+    .promo {
+        &__title {
+            font-size: 66px;
+            line-height: 61px;
+        }
+    }
+    .services {
+        &__inner {
+         .services__item {
+             width: 100%;
+        }
+        }
+     } 
+     .mission {
+         .mission__title {
+            font-size: 50px;
+         }
+         .mission__message {
+             transform: translateY(-13px)
+         }
+         .mission__header {
+             font-size: 19px;
+             span {
+                 font-size: 16px;
+             }
+         }
+     }
+     
+}
+@media (min-width: 320px) and (max-width: 475px) {
+    .services {
+        &__inner {
+         .services__item {
+            padding: 25px 0;
+        }
+      }
+    } 
+    .promo__title {
+        font-size: 52px;
+        line-height: 51px;
+    }
+    .feed {
+        &__clients {
+            ul {
+                li {
+                    margin: 0 0px 50px 0!important;
+                    max-width: 110px;
+                }
+            }
+        }
+        &__footer {
+            text-align: center;
+        }
+        &__message   {
+            margin: 30px 0 0 19px!important;
+            display: block;
+        }
+    }
+    .advantages__list:after {
+        bottom: 4px;
+    }
+    .advantages .advantages__col {
+        margin-bottom: 30px;
+    }
+    .blog__text {
+        padding: 0;
+    }
+    .footer {
+        background-image: none!important;
+        .footer__links a {
+            font-size: 11px;
+        }
+     }
+    
+     .modal__close {
+        top: -24px!important;
+        right: 1px!important;
+    }
+    .title {
+        font-size: 40px!important;
+    }
+}
+}

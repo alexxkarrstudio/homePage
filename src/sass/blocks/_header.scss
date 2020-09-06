@@ -1,0 +1,188 @@
+  .header {
+
+      &__decor {
+        display: flex;
+        justify-content: space-between;
+        &_unit {
+          width: 33.333%;
+          height: .5rem;
+          &--1 {
+            background-color: $pink;
+          }
+          &--2 {
+            background-color: rgba(0, 187, 212, 0.9);
+          }
+          &--3 {
+            background-color: #ffc107;
+          }
+          &--4 {
+            background-color: rgba(63, 81, 181, 0.9);
+          }
+          &--5 {
+            background-color: #009688;
+          }
+        }
+
+      }
+      .logo__wrapper {
+        display: flex;
+        align-items: center;
+
+        .logo__circle {
+          width: 4rem;
+          height: 4rem;
+          background-color: #000;
+          border-radius: 100%;
+          background: url(../../img/flag.jpg)center center/cover no-repeat;
+          overflow: hidden;
+          img {
+            width: 100%;
+            display: block;
+          }
+        }
+        .logo__circle__dark {
+          width: 3rem;
+          height: 3rem;
+        }
+        .logo__container {
+          margin-left: 0.8rem;
+          color: #fff;
+          font-size: .96rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          transition:.8s all;
+          .logo__name {
+            font-weight: 600;
+            &:after {
+              content:"";
+              display: block;
+              height: 1px;
+              width: 0;
+              background-color: rgba(255, 255, 255, 0.5);
+          transition:.8s all;
+
+            }
+            &:after {
+              content:"";
+              display: block;
+              height: 1px;
+              width: 9.4rem;
+              background-color: rgba(255, 255, 255, 0.5);
+          transition:.8s all;
+
+            }
+          }
+          .logo__position {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.8rem;
+          }
+        }
+      }
+
+      height: 80px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      width: 100%;
+      transition: .3s all;
+
+      &__dark {
+      height: 55px;
+      }
+
+      &__inner {
+        a {
+          text-decoration: none;
+        }
+        display: flex;
+        justify-content: space-between;
+        background-color: rgba(38, 50, 56, 0.9);
+        // background: linear-gradient(to bottom, $pink, #607d8b );
+
+        box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+        // border-radius: 0 0 10% 10%;
+        padding: 0 25px;
+        align-items: center;
+        transition: .3s all;
+        height: 85px;/* esli ne zadat vysotu,to on obernet tekst i ne sdvinetsya s mesta!align-items togda ne srabotaet */
+        &_dark {
+          height: 55px;
+        }
+       
+      }
+      .nav  {
+        display: flex;
+        height: 100%;
+        font-size: 1.2rem;
+        &__link {
+          color:#fff;
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          padding: 0 15px;
+          transition: .3s all;
+        }
+      //   .nav__link:hover {
+      //     color: $pink;
+      // }
+        .active {
+          background-color: $pink;
+        }
+      }
+    .burger {
+      display: none;
+      position: relative;
+      width: 30px;
+      height: 23px;
+      font-size: 0;
+      background-color: transparent;
+      &__line {
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+        margin: 3px 0;
+        &:nth-child(1), &:nth-child(3) {
+          width: 20px;
+          margin-left: auto;/* korotkuju polosku otpravlyaet napravo.otstupaet ot LEFT do teh por, poka ne upretsya sprava v granicu */
+          transform-origin: right;
+          transition: width .2s ease-out;
+        }
+      }
+      &:focus {
+        outline: none;
+      }
+      
+    }
+     
+  }  
+  .header .active  .burger__line:nth-child(1) {
+    width: 0%;
+    transition: width .2s ease-out;
+
+  }
+  .header .active  .burger__line:nth-child(3) {
+   width: 0%;
+   transition: width .2s ease-out;
+
+  }
+  .header .active  .burger__line:nth-child(2) {
+    transform-origin: center;
+    transform: rotate(45deg);
+    transition: .3s all;
+    position: absolute;
+    left: 0;
+    top: 50%;
+  }
+  .header .active  .burger__line:nth-child(4) {
+    transform: rotate(-45deg);
+    transition: .3s all;
+    position: absolute;
+    left: 0;
+    top: 50%;
+  }
+
+ 
+  

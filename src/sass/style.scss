@@ -1,0 +1,75 @@
+@import 'libs/animate';
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/bootstrap-grid.min';
+@import 'libs/slick';
+
+@import 'base/variables';
+@import 'blocks/promo';
+@import 'blocks/header';
+@import 'blocks/intro';
+
+@import 'blocks/buttons';
+@import 'base/media';
+
+@import 'blocks/pageup';
+@import 'base/animations';
+@import 'base/mixins';
+@import 'blocks/services';
+@import 'blocks/portfolio';
+@import 'blocks/forms';
+
+
+@import 'blocks/circle';
+@import 'blocks/author';
+@import 'blocks/social';
+@import 'blocks/footer';
+
+
+ 
+
+
+
+    html  {
+        font-size: 16px;
+    }
+ 
+    .container {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1230px;/* 30 dobavleno iz-za paddingov 15X2.chtoby ne sjedalos prostranstvo */
+        padding: 0 15px;
+    }
+    .img {  /* eto dlya adaptivnosti kartinok,chtoby oni vsegda zanimali 100% ot contejnera */
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    section {
+        padding: 60px 0;
+    }
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 1rem;
+        color:#607d8b;
+        line-height: 1.4;
+      
+    }
+   
+
+   
+    body.no-scroll  {
+        overflow: hidden;
+    }
+    h1,h2,h3,h4,h5,h6 {
+        margin: 0;
+    }
+    ul,ol {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    *,
+    *:before,*:after {
+        box-sizing: border-box;
+    }

@@ -1,0 +1,26 @@
+.social {
+    display: flex;
+    align-items: center;
+    
+    &__title {
+        color:$black;
+        font-size: 1rem;
+        font-weight: 600;
+        margin-right: 1rem;
+    }
+    &__link:hover .social__icon {
+        fill: $pink;
+        transform: rotate(360deg);
+        transition: .8s all;
+    }
+    &__icon {
+        display: block; /* ubiraet otstup,kotoryj est po umolchaniju u ikonok */
+        width: 2rem;
+        height: 2rem;
+        fill: #ababab;
+        margin-right: 1rem;
+    }
+    &__media {
+        display: flex;
+    }
+}

@@ -1,0 +1,46 @@
+.footer {
+        padding: 2rem 0;
+        background-color: rgba(38, 50, 56, 0.9);
+        text-align: center;
+        &__middle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .promo__social {
+            margin-bottom: 0;
+        }
+
+        .promo__social--icon {
+            background-color: $pink;
+            border-radius: 10%;
+            padding: .6rem;
+            margin-right: .6rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 1.4rem;
+                height: 1.4rem;
+            }
+        }
+
+        .promo__social--icon:hover .sm__icon {
+            transform: rotate( 360deg);
+            transition: .8s all;
+        }
+     
+
+        &__contacts {
+            display: flex;
+            flex-direction: column;
+            a {
+                text-decoration: none;
+                color: rgb(96, 125, 139);;
+                &:hover {
+                    color: $pink;
+                }
+            }
+        }
+    }
