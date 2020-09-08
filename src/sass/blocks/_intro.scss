@@ -1,5 +1,5 @@
 .intro {
-    padding: 10rem 0 5rem 0;
+    padding: 5rem 0;
     &__wrapper {
         display: flex;
         justify-content: space-between;
@@ -89,7 +89,7 @@
     }
     &__text {
         font-size: 1rem;
-        line-height: 1.8;
+        line-height: 1.5;
         text-align: center;
         color:rgba(255, 255, 255, 0.671);
     }

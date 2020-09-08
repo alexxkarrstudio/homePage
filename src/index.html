@@ -19,6 +19,13 @@
 
 
     <header id="header" class="header">
+        <div class="header__decor">
+            <div class="header__decor_unit header__decor_unit--1"></div>
+            <div class="header__decor_unit header__decor_unit--2"></div>
+            <div class="header__decor_unit header__decor_unit--3"></div>
+            <div class="header__decor_unit header__decor_unit--4"></div>
+            <div class="header__decor_unit header__decor_unit--5"></div>
+        </div>  
         <div class="container">
             <div id="header__inner" class="header__inner">
 
@@ -42,30 +49,18 @@
                 <button id="navToggle" class="burger" type="button">
                     <!-- <img class="burger__icon" src="img/burger.svg" alt=""> -->
                     <span class="burger__line">1</span>
-                    <span class="burger__line">2</span>
+                    <span class="burger__line burger__line">2</span>
                     <span class="burger__line">3</span>
                     <span class="burger__line">4</span>
                 </button>
             </div>
 
-            <div class="header__decor">
-                <div class="header__decor_unit header__decor_unit--1"></div>
-                <div class="header__decor_unit header__decor_unit--2"></div>
-                <div class="header__decor_unit header__decor_unit--3"></div>
-                <div class="header__decor_unit header__decor_unit--4"></div>
-                <div class="header__decor_unit header__decor_unit--5"></div>
-
-            </div>
+  
         </div>
     </header> <!-- header -->
 
 
     <div id="promo" class="promo">
-<!-- 
-        <div id="introSlider" class="intro__slider">
-            <img class="intro__slider_item" src="img/slider/ben-neale-29w9FiMWSr8-unsplash.jpg" alt="">
-            <img class="intro__slider_item" src="img/slider/sarah-dorweiler-2s9aHF4eCjI-unsplash.jpg" alt="">
-        </div> -->
 
         <div class="container">
             <div class="promo__inner">
@@ -92,6 +87,7 @@
 
                     <!-- <button class="button button_medium" data-aos="fade-up" data-aos-delay="200">Get in touch</button> -->
                     <a href="tel:18564707590" > <button class="button button_medium" data-aos="fade-up" data-aos-delay="200">Get in touch</button> </a>
+                     
                     <a href="tel:18564707590" class="tel"> 1 856-470-7490</a>
 
                     <a href="mailto:alexxkarrstudio@gmail.com" class="email"> alexxkarrstudio@gmail.com</a>
@@ -144,9 +140,9 @@
       <div class="container">
         <div class="intro__wrapper">
             <div class="intro__unit intro__unit--big" data-aos="fade-up">
-                <div class="intro__title">Welcome to <span>my portfolio</span></div>
+                <div class="intro__title">Welcome to <br> <span>my portfolio</span></div>
                 <div class="intro__text">
-                    I'm happy to see you on my portfolio-website. I hope you gonna like it and if having any quastions please let me know
+                    Happy to see you on my portfolio-website! I hope you are going to like it and, please, let me know if you have any questions or comments.
                 </div>
                 <div class="intro__footer">
                     <a href="https://www.behance.net/akarakulkabf1b" target="blank">My Behance</a>
@@ -158,7 +154,7 @@
                     <div class="intro__unit--title">Web Design</div>
                 </div>
                 <img src="icons/icons/layers.svg" alt="" class="intro__unit--icon">
-                <div class="intro__unit--text">My passion about web design started a long time ago and I'm still very enthusiastic about growing every day with new challenges  </div>
+                <div class="intro__unit--text">My passion about Web Design started a long time ago and I am enthusiastically growing my skills till these days with new challenges and opportunities. </div>
             </div>
             <div class="intro__unit intro__unit--blue" data-aos="fade-up" data-aos-delay="200">
                 <div class="intro__unit--header">
@@ -166,7 +162,7 @@
                     <div class="intro__unit--title">UI/UX</div>
                 </div>
                 <img src="icons/icons/web-page.svg" alt="" class="intro__unit--icon">
-                <div class="intro__unit--text"> As demand for UX keeps growing I'm trying hard to make the best research possible that later will turn into beautiful UI </div>
+                <div class="intro__unit--text"> As demand for UX keeps growing I'm making sure my clients get the meaningful UX practices with a beautiful UI in one package.  </div>
             </div>
             <div class="intro__unit intro__unit--orange" data-aos="fade-up" data-aos-delay="300">
                 <div class="intro__unit--header">
@@ -174,7 +170,7 @@
                     <div class="intro__unit--title">Development</div>
                 </div>
                 <img src="icons/icons/code.svg" alt="" class="intro__unit--icon">
-                <div class="intro__unit--text">Righting code is my another passion and skill that I practice everyday to become the best version of myself</div>
+                <div class="intro__unit--text">Coding is my another passion and skill that I practice everyday to become the best version of myself not only as a designer but a developer as well.</div>
             </div>
         </div>
       </div>
@@ -184,10 +180,18 @@
     <div id="clients" class="portfolio" data-scrollspy="#clients">
        <div class="container">
         <div class="row">
-            <div class="col-lg-8">
+            <div class="portfolio__message--wrapper portfolio__message--wrapper--show" style="display: none;">
+                <div class="portfolio__title" data-aos="fade-up" >
+                    My portfolio
+                </div>
+                <!-- <div class="portfolio__text" data-aos="fade-up" >
+                    Check my latest projects and please let me know what you think about them. I'm always looking for something to improve in constant chase to find that sweet spot between meaningful UX and beautiful UI transforming into best experience for my customer.
+                </div> -->
+            </div>
+            <div class="col-lg-8 order-2 order-lg-1">
                 <div class="portfolio__wrapper">
 
-                    <a href="https://alexxkarrstudio.github.io/" class="portfolio__link" target="blank">
+                    <a href="http://transport.alexxkarrstudio.com/" class="portfolio__link" target="blank">
                         <div class="portfolio__unit portfolio__unit--1" data-aos="fade-right">
                             
                             <div class="unit__footer">
@@ -199,7 +203,7 @@
                         </div>
                     </a>
                     
-                    <a href="https://alexxkarrstudio.github.io/" class="portfolio__link" target="blank">
+                    <a href="http://uber.alexxkarrstudio.com/" class="portfolio__link" target="blank">
                         <div class="portfolio__unit portfolio__unit--2" data-aos="fade-left">
                             <div class="unit__footer">
                                 <div class="unit__footer--title">Uber Moscow <br>template</div>
@@ -210,7 +214,7 @@
                         </div>
                     </a>
 
-                    <a href="https://alexxkarrstudio.github.io/" class="portfolio__link" target="blank">
+                    <a href="http://pulse.alexxkarrstudio.com/" class="portfolio__link" target="blank">
                         <div class="portfolio__unit portfolio__unit--3" data-aos="fade-right">
                             <div class="unit__footer">
                                 <div class="unit__footer--title">Pulse Website<br>template</div>
@@ -222,7 +226,7 @@
                     </a>
 
 
-                    <a href="https://alexxkarrstudio.github.io/" class="portfolio__link" target="blank">
+                    <a href="https://www.behance.net/gallery/90751685/MODERN-CONCEPT-FOR-CHARISMATIC-AND-CREATIVE-BLOG" class="portfolio__link" target="blank">
                         <div class="portfolio__unit portfolio__unit--4" data-aos="fade-left">
                             <div class="unit__footer">
                                 <div class="unit__footer--title">Personal Blog<br>template</div>
@@ -256,13 +260,13 @@
                     </a>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 order-1 order-lg-2">
                 <div class="portfolio__message--wrapper">
                     <div class="portfolio__title" data-aos="fade-up" >
                         My portfolio
                     </div>
                     <div class="portfolio__text" data-aos="fade-up" >
-                        Check my latest projects and please let me know what you think about them. I'm always looking for something to improve in constant chase to find that sweet spot
+                        Check my latest projects and please let me know what you think about them. I'm always looking for something to improve in constant chase to find that sweet spot between meaningful UX and beautiful UI transforming into best possible experience for my customer.
                     </div>
                 </div>
             </div>
@@ -273,28 +277,12 @@
     </div> <!-- portfolio -->
 
 
-    <!-- <section class="consultation">
-        <div class="container">
-              <div class="row">
-                  <div class="col-xl-9 col-lg-11">
-                    <h2 class="title fadeInUp wow">ПОЛУЧИТЕ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ,  ПО ПОДБОРУ ПУЛЬСОМЕТРА</h2>
-                    <div class="consultation__descr rubberBand wow">Просто заполните форму заявки <br>и мы перезвоним вам в течении 10 минут </div>
-                  </div>
-
-                  <form id="consultation-form" class="feed-form" action="#">
-                      <input name="name" required placeholder="Ваше имя" type="text">
-                      <input name="phone" required placeholder="Ваш телефон" type="phone">
-                      <input name="email" required placeholder="Ваш E-mail" type="email">
-                      <button class="button button_submit">заказать консультацию</button>
-                  </form>
-              </div>
-        </div>
-    </section> -->
+    
 
     <footer class="footer"data-aos="fade-up"  >
        <div class="container">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4 order-1">
                     <div class="promo__social">
                         <a href="" class="promo__social--icon">
                             <img src="icons/icons/facebook__white.svg" alt="facebook" class="sm__icon">
@@ -310,8 +298,8 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-4 footer__middle" >@2020 Alexander.Karakulka Portfolio</div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 order-3 footer__contact" >@2020 Alexander.Karakulka Portfolio</div>
+                <div class="col-lg-4 order-2">
                     <div class="footer__contacts">
                         <a href="tel:18564707590" class="tel"> 1 856-470-7490</a>
                         <a href="mailto:alexxkarrstudio@gmail.com" class="email"> alexxkarrstudio@gmail.com</a>
